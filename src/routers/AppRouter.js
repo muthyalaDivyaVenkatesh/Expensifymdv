@@ -19,11 +19,11 @@ export const history = createHistory()
         <Header />
         <Switch>
           <Route path="/" component={Login} exact />
-          <PrivateRoute path="/dashboard" component={ExpenseDashboardPage} exact />
-          <PrivateRoute path="/create" component={AddExpensePage} />
-          <PrivateRoute path="/edit/:id" component={EditExpensePage} />
-          <PrivateRoute path="/help" component={HelpPage} />
-          <PrivateRoute component={NotFound} />
+          <Route path="/dashboard" component={ExpenseDashboardPage} exact />
+          <Route path="/create" component={AddExpensePage} />
+          <Route path="/edit/:id" component={EditExpensePage} />
+          <Route path="/help" component={HelpPage} />
+          <Route component={NotFound} />
         </Switch>
       </div>
     </Router>
